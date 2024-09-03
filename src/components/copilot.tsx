@@ -14,20 +14,20 @@ export default function CodeWithCopilot() {
         </a>
 
         <div className="mt-10">
-          <p className="mt-3 text-lg text-version_text py-2">
+          <p className="mt-3 text-base text-version_text py-2">
             <a className="text-sky-600 underline" href="#">
               Completions
             </a>{" "}
             present suggestions automatically to help you code more efficiently.
           </p>
-          <p className="mt-3 text-lg text-version_text py-2">
+          <p className="mt-3 text-base text-version_text py-2">
             <a className="text-sky-600 underline" href="#">
               Copilot Chat
             </a>{" "}
             understands the context of your code, workspace, extensions,
             settings, and more.
           </p>
-          <p className="mt-3 text-lg text-version_text py-2">
+          <p className="mt-3 text-base text-version_text py-2">
             <a className="text-sky-600 underline" href="#">
               Inline Chat
             </a>{" "}

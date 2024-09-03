@@ -5,6 +5,7 @@ import Banner from "./components/banner";
 import CodeAnyLanguage from "./components/languages";
 import CodeAnyExtensions from "./components/extensions";
 import CodeWithCopilot from "./components/copilot";
+import CodeCustomized from "./components/code-customized";
 
 function App() {
   const [showVersion, setShowVersion] = useState(true);
@@ -38,6 +39,7 @@ function App() {
       <CodeAnyLanguage />
       <CodeAnyExtensions />
       <CodeWithCopilot />
+      <CodeCustomized />
     </>
   );
 }
