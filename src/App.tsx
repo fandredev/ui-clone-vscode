@@ -7,6 +7,7 @@ import CodeAnyExtensions from "./components/extensions";
 import CodeWithCopilot from "./components/copilot";
 import CodeCustomized from "./components/code-customized";
 import CodeAnywhere from "./components/code-anywhere";
+import CodeRichFeatures from "./components/code-rich-features";
 
 function App() {
   const [showVersion, setShowVersion] = useState(true);
@@ -42,6 +43,7 @@ function App() {
       <CodeWithCopilot />
       <CodeCustomized />
       <CodeAnywhere />
+      <CodeRichFeatures />
     </>
   );
 }
