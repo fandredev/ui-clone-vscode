@@ -3,7 +3,7 @@ import Button from "./button";
 export default function Banner() {
   return (
     <>
-      <main className="bg-black opacity-95 text-white pb-10 border-b-gray-400 border-b-1 md:grid md:grid-cols-[1fr_65%] md:gap-16 md:px-[6rem] md:pb-32">
+      <main className="bg-black opacity-95 text-white pb-10 border-b-gray-400 border-b-1 to_tablet:grid to_tablet:grid-cols-[1fr_65%] to_tablet:gap-16 to_tablet:px-[6rem] to_tablet:pb-32">
         <div className="xl:flex xl:justify-center xl:flex-col xl:items-start">
           <div className="flex justify-center">
             <span className="border-2 border-solid rounded-full px-3 py-2 text-version_text border-slate-600 text-sm">
@@ -57,7 +57,7 @@ export default function Banner() {
 
         <div className="flex justify-center">
           <img
-            className="mt-3 w-11/12	contrast-125"
+            className="mt-3 w-11/12	contrast-125 object-contain"
             src="images/banner.png"
             alt="Código Typescript no VsCode de um component chamado Button no React"
           />

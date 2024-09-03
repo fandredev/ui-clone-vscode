@@ -16,7 +16,7 @@ export default function CodeAnyLanguage() {
         </p>
       </div>
 
-      <aside className="my-4 grid grid-cols-3	gap-2">
+      <aside className="my-4 grid grid-cols-3	gap-2 medium-range:grid-cols-2">
         {languages.map((language, index) => (
           <LanguageItem key={index} language={language} />
         ))}
