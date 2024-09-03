@@ -15,7 +15,7 @@ export default function Header() {
           <b>Visual Studio Code</b>
         </span>
         <div className="flex flex-1 items-center hide-items-sidebar:hidden">
-          <ol className="text-version_text flex gap-5">
+          <ol className="text-version_text flex gap-5 cursor-pointer">
             <li>Docs</li>
             <li>Updates</li>
             <li>Blog</li>
