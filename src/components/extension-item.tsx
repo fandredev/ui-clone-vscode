@@ -12,7 +12,7 @@ export default function ExtensionItem({ extension }: ExtensionItemProps) {
         src={extension.image}
         alt={extension.name}
       />
-      <div className="hidden xl:flex xl:justify-around">
+      <div className="hidden xl:flex xl:justify-around xl:flex-col">
         <span className="text-white">{extension.name}</span>
         <p className="text-version_text">{extension.description}</p>
       </div>

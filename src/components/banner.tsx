@@ -9,7 +9,7 @@ export default function Banner() {
             <b>Free. Built on open source. Runs everwhere.</b>
           </span>
         </div>
-        <section className="flex items-center flex-wrap py-4 flex-col">
+        <section className="flex items-center flex-wrap py-4 flex-col ">
           <h1 className="text-5xl text-center leading-tight">
             <strong>Code Editing. Redefined.</strong>
           </h1>

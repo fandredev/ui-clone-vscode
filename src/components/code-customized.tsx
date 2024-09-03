@@ -1,6 +1,6 @@
 export default function CodeCustomized() {
   return (
-    <section className="py-5 px-5 bg-black opacity-95">
+    <section className="py-5 px-5 bg-black opacity-95 md:grid md:grid-cols-2 md:gap-5 md:px-[4rem] md:pb-10">
       <aside>
         <h2 className="text-3xl font-semibold	text-white">
           Code fully customized
