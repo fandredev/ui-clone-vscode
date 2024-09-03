@@ -87,7 +87,7 @@ const languages: Language[] = [
 export default function CodeAnyLanguage() {
   return (
     <section className="py-5 px-5 bg-black opacity-95">
-      <h1 className="text-3xl font-semibold	text-white">Code in any language</h1>
+      <h2 className="text-3xl font-semibold	text-white">Code in any language</h2>
       <p className="mt-3 text-lg text-version_text">
         VS Code supports almost every major programming language. Several ship
         in the box, like JavaScript, TypeScript, CSS, and HTML, but extensions

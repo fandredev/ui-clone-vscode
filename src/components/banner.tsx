@@ -10,7 +10,7 @@ export default function Banner() {
           </span>
         </div>
         <section className="flex items-center flex-wrap py-4 flex-col">
-          <h1 className="text-5xl">
+          <h1 className="text-5xl text-center leading-tight">
             <strong>Code Editing. Redefined.</strong>
           </h1>
           <div className="flex gap-1 py-3">
