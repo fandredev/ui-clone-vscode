@@ -90,8 +90,9 @@ export default function CodeAnyLanguage() {
       <h2 className="text-3xl font-semibold	text-white">Code in any language</h2>
       <p className="mt-3 text-lg text-version_text">
         VS Code supports almost every major programming language. Several ship
-        in the box, like JavaScript, TypeScript, CSS, and HTML, but extensions
-        for others can be found in the VS Code Marketplace.
+        in the box, like JavaScript, TypeScript,{" "}
+        <abbr title="Cascading Style Sheets">CSS</abbr>, and HTML, but
+        extensions for others can be found in the VS Code Marketplace.
       </p>
 
       <aside className="my-4 grid grid-cols-2	gap-y-2">

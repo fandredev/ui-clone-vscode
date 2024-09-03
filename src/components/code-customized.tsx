@@ -6,8 +6,8 @@ export default function CodeCustomized() {
           Code fully customized
         </h2>
         <p className="mt-3 text-base text-version_text py-2">
-          Customize your VS Code UI and layout so that it fits your coding
-          style.
+          Customize your VS Code <abbr title="User interface">UI</abbr> and
+          layout so that it fits your coding style.
         </p>
 
         <div className="mt-5">

@@ -22,7 +22,9 @@ export default function Banner() {
                   className="w-5"
                 />
                 <span>
-                  <b>&nbsp;.deb</b>
+                  <b>
+                    &nbsp;.<abbr title="Debian">deb</abbr>
+                  </b>
                 </span>
               </div>
               <small className="font-medium">Debian, Ubuntu...</small>

@@ -6,8 +6,8 @@ export default function CodeWithCopilot() {
           Code with GitHub Copilot
         </h2>
         <p className="mt-3 text-lg text-version_text py-2">
-          Write code faster and smarter with GitHub Copilot, your AI pair
-          programmer.
+          Write code faster and smarter with GitHub Copilot, your{" "}
+          <abbr title="Inteligência artificial">AI</abbr> pair programmer.
         </p>
         <a className="text-sky-600 underline" href="#">
           Try GitHub Copilot free for 30 days
