@@ -6,7 +6,7 @@
 
 # Image VSCode clone
 
-The project reply the interface from VsCode site (https://code.visualstudio.com/)
+The project reply the interface from VsCode site (https://code.visualstudio.com/). Not is 100% perfectly, but, i did my better.
 
 **NOTE: The code in the first week September, 2024. The UI from the VsCode site can be changed.**
 
