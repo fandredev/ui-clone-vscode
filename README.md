@@ -1,8 +1,6 @@
-
 # Stack used
 
 <img src="https://skillicons.dev/icons?i=typescript,react,yarn,git,vite,tailwind,vercel,vitest,githubactions&theme=dark" alt="typescript,react,yarn,git,vite,tailwind,vercel,vitest,githubactions" />
-
 
 # Image VSCode clone
 
@@ -12,7 +10,7 @@ The project reply the interface from VsCode site (https://code.visualstudio.com/
 
 ![image](https://github.com/user-attachments/assets/019546b7-2414-48b9-8fab-17c0617c64de)
 
-### Outras ferramentas:
+### Other tools:
 
 - [Prettier](https://eslint.org/)
 - [Eslint](https://prettier.io/)
