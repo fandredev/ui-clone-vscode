@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="py-5 px-5 bg-black opacity-95 text-white">
+    <footer className="py-5 px-5 pb-16 bg-black opacity-95 text-white md:px-[6rem]">
       <div className="my-5 flex justify-between">
         <ul className="flex gap-5">
           <li>
@@ -34,7 +34,7 @@ export default function Footer() {
           />
         </div>
       </div>
-      <ul className="text-xs flex gap-4">
+      <ul className="text-xs flex gap-4 text-version_text">
         <li>Support</li>
         <li>Privacy</li>
         <li>Manage Cookies</li>

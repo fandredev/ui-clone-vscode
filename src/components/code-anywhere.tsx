@@ -1,6 +1,6 @@
 export default function CodeAnywhere() {
   return (
-    <section className="py-5 px-5 bg-black opacity-95">
+    <section className="py-5 px-5 bg-black opacity-95 md:grid md:grid-cols-2 md:gap-5 md:px-[6rem]">
       <aside>
         <h2 className="text-3xl font-semibold	text-white">Code anywhere</h2>
         <p className="mt-3 text-base text-version_text py-2">
@@ -28,7 +28,7 @@ export default function CodeAnywhere() {
         </div>
       </aside>
 
-      <aside className="mt-3">
+      <aside className="mt-3 md:flex md:items-center">
         <img
           src="images/swimlane-anywhere.png"
           alt="Search by themes from vscode"
