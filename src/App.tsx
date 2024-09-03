@@ -6,6 +6,7 @@ import CodeAnyLanguage from "./components/languages";
 import CodeAnyExtensions from "./components/extensions";
 import CodeWithCopilot from "./components/copilot";
 import CodeCustomized from "./components/code-customized";
+import CodeAnywhere from "./components/code-anywhere";
 
 function App() {
   const [showVersion, setShowVersion] = useState(true);
@@ -40,6 +41,7 @@ function App() {
       <CodeAnyExtensions />
       <CodeWithCopilot />
       <CodeCustomized />
+      <CodeAnywhere />
     </>
   );
 }
