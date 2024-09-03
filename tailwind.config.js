@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         version_text: "#9ba3b4",
+        background_buttons: "#0078d4",
       },
     },
   },
