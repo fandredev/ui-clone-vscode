@@ -8,7 +8,7 @@ The project reply the interface from VsCode site (https://code.visualstudio.com/
 
 # Stack used
 
-<img src="https://skillicons.dev/icons?i=typescript,react,yarn,git,vite,tailwind,vercel,vitest&theme=dark" alt="typescript,react,yarn,git,vite,tailwind,vercel,vitest" />
+<img src="https://skillicons.dev/icons?i=typescript,react,yarn,git,vite,tailwind,vercel,vitest,githubactions&theme=dark" alt="typescript,react,yarn,git,vite,tailwind,vercel,vitest,githubactions" />
 
 ### Outras ferramentas:
 
