@@ -1,3 +1,9 @@
+
+# Stack used
+
+<img src="https://skillicons.dev/icons?i=typescript,react,yarn,git,vite,tailwind,vercel,vitest,githubactions&theme=dark" alt="typescript,react,yarn,git,vite,tailwind,vercel,vitest,githubactions" />
+
+
 # Image VSCode clone
 
 The project reply the interface from VsCode site (https://code.visualstudio.com/)
@@ -5,10 +11,6 @@ The project reply the interface from VsCode site (https://code.visualstudio.com/
 **NOTE: The code in the first week September, 2024. The UI from the VsCode site can be changed.**
 
 ![image](https://github.com/user-attachments/assets/019546b7-2414-48b9-8fab-17c0617c64de)
-
-# Stack used
-
-<img src="https://skillicons.dev/icons?i=typescript,react,yarn,git,vite,tailwind,vercel,vitest,githubactions&theme=dark" alt="typescript,react,yarn,git,vite,tailwind,vercel,vitest,githubactions" />
 
 ### Outras ferramentas:
 
