@@ -6,11 +6,9 @@ The project reply the interface from VsCode site (https://code.visualstudio.com/
 
 ![image](https://github.com/user-attachments/assets/019546b7-2414-48b9-8fab-17c0617c64de)
 
-
-
 # Stack used
 
-<img src="https://skillicons.dev/icons?i=typescript,react,yarn,git,vite,tailwind,vercel&theme=dark" alt="typescript,react,yarn,git,vite,tailwind,vercel" />
+<img src="https://skillicons.dev/icons?i=typescript,react,yarn,git,vite,tailwind,vercel,vitest&theme=dark" alt="typescript,react,yarn,git,vite,tailwind,vercel,vitest" />
 
 ### Outras ferramentas:
 
@@ -43,6 +41,18 @@ git clone git@github.com:fandredev/ui-clone-vscode.git
 
 ```
  yarn run dev
+```
+
+## Run tests
+
+```
+ yarn run test
+```
+
+## Run coverage
+
+```
+ yarn run coverage
 ```
 
 ## :mailbox_with_no_mail: Contatos
