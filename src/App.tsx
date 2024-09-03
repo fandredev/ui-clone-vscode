@@ -23,7 +23,11 @@ function App() {
         {showVersion && (
           <div className="flex items-center justify-center">
             <span className="text-version_text mx-3 text-xs">
-              <a className="text-sky-600 underline" href="#">
+              <a
+                className="text-sky-600 underline"
+                href="#"
+                data-testid="version-vscode-data-test-anchor"
+              >
                 Version 1.92
               </a>{" "}
               is now available! Read about the new features and fixes from July.

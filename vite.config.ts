@@ -13,6 +13,7 @@ export default defineConfig({
     setupFiles: ["./src/setupTests.ts"],
 
     coverage: {
+      include: ["src/**/*"],
       reporter: ["text", "html", "json"],
       thresholds: {
         branches: 80,

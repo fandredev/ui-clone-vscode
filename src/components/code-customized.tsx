@@ -19,7 +19,11 @@ export default function CodeCustomized() {
             preferences and work environment.{" "}
           </p>
           <p className="mt-3 text-base text-version_text py-2">
-            <a className="text-sky-600 underline" href="#">
+            <a
+              data-testid="settings-sync-data-test-anchor"
+              className="text-sky-600 underline"
+              href="#"
+            >
               Settings Sync
             </a>{" "}
             enables you to share your user settings across your VS Code
