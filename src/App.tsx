@@ -8,6 +8,7 @@ import CodeWithCopilot from "./components/copilot";
 import CodeCustomized from "./components/code-customized";
 import CodeAnywhere from "./components/code-anywhere";
 import CodeRichFeatures from "./components/code-rich-features";
+import Footer from "./components/footer";
 
 function App() {
   const [showVersion, setShowVersion] = useState(true);
@@ -44,6 +45,7 @@ function App() {
       <CodeCustomized />
       <CodeAnywhere />
       <CodeRichFeatures />
+      <Footer />
     </>
   );
 }

@@ -1,0 +1,46 @@
+export default function Footer() {
+  return (
+    <footer className="py-5 px-5 bg-black opacity-95 text-white">
+      <div className="my-5 flex justify-between">
+        <ul className="flex gap-5">
+          <li>
+            <img
+              className="w-6"
+              src="/images/x-icon.svg"
+              alt="Ìcone do Rede Social X"
+            />
+          </li>
+          <li>
+            <img
+              className="w-6"
+              src="/images/github-icon.svg"
+              alt="Rede Social X"
+            />
+          </li>
+          <li>
+            <img
+              className="w-6"
+              src="/images/youtube-icon.svg"
+              alt="ícone do Youtube"
+            />
+          </li>
+        </ul>
+
+        <div>
+          <img
+            className="w-6"
+            src="/images/microsoft.svg"
+            alt="Ìcone da microsoft"
+          />
+        </div>
+      </div>
+      <ul className="text-xs flex gap-4">
+        <li>Support</li>
+        <li>Privacy</li>
+        <li>Manage Cookies</li>
+        <li>Terms of Use</li>
+        <li>License</li>
+      </ul>
+    </footer>
+  );
+}
