@@ -1,3 +1,5 @@
+import LanguageItem from "./language-item";
+
 type LanguageName =
   | "Javascript"
   | "Typescript"
@@ -26,7 +28,7 @@ type LanguageImage =
   | "images/languages/powershell.png"
   | "images/languages/yaml.png";
 
-interface Language {
+export interface Language {
   name: LanguageName;
   image: LanguageImage;
 }
@@ -97,10 +99,7 @@ export default function CodeAnyLanguage() {
 
       <aside className="my-4 grid grid-cols-2	gap-y-2">
         {languages.map((language, index) => (
-          <div key={index} className="flex items-center gap-3">
-            <img className="w-10" src={language.image} alt={language.name} />
-            <code className="text-version_text">{language.name}</code>
-          </div>
+          <LanguageItem key={index} language={language} />
         ))}
       </aside>
     </section>

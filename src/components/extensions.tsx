@@ -1,4 +1,6 @@
-interface Extensions {
+import ExtensionItem from "./extension-item";
+
+export interface Extensions {
   name: string;
   image: string;
   description: string;
@@ -66,20 +68,7 @@ export default function CodeAnyExtensions() {
 
       <aside className="my-4 grid grid-cols-3	gap-2">
         {extensions.map((extension, index) => (
-          <div
-            key={index}
-            className="border bg-background_cards_extensions border-none p-4 gap-2 flex flex-row items-center justify-center rounded-md no-underline"
-          >
-            <img
-              className={`w-8 ${extension.name === "Jupyter" && "rounded-md"}`}
-              src={extension.image}
-              alt={extension.name}
-            />
-            <div className="hidden xl:flex xl:justify-around">
-              <span className="text-white">{extension.name}</span>
-              <p className="text-version_text">{extension.description}</p>
-            </div>
-          </div>
+          <ExtensionItem key={index} extension={extension} />
         ))}
       </aside>
 
