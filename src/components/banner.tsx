@@ -3,7 +3,7 @@ import Button from "./button";
 export default function Banner() {
   return (
     <>
-      <main className="bg-black opacity-95 text-white">
+      <main className="bg-black opacity-95 text-white pb-10 border-b-gray-400 border-b-1">
         <div className="flex justify-center">
           <span className="border-2 border-solid rounded-full px-3 py-2 text-version_text border-slate-600 text-sm">
             <b>Free. Built on open source. Runs everwhere.</b>

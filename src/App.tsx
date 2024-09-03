@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Header from "./components/header";
 import Banner from "./components/banner";
+import CodeAnyLanguage from "./components/languages";
 
 function App() {
   const [showVersion, setShowVersion] = useState(true);
@@ -32,6 +33,7 @@ function App() {
         )}
       </section>
       <Banner />
+      <CodeAnyLanguage />
     </>
   );
 }
