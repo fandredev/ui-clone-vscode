@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
-import { FeatureCard } from "../../components/code-rich-features";
 import IntegratedTerminalCard from "../../components/card-features-item";
+import { FeatureCard } from "../../utils/features.list";
 
 describe(`${IntegratedTerminalCard.name} component`, () => {
   const mockFeature: FeatureCard = {

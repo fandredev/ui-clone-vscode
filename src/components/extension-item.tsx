@@ -1,4 +1,4 @@
-import { Extensions } from "./extensions";
+import { Extensions } from "../utils/extensions-list";
 
 interface ExtensionItemProps {
   extension: Extensions;

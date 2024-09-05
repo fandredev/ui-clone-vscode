@@ -1,4 +1,8 @@
-import { Extensions } from "../components/extensions";
+export interface Extensions {
+  name: string;
+  image: string;
+  description: string;
+}
 
 export const extensions: Extensions[] = [
   {

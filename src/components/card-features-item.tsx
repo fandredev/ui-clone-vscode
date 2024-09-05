@@ -1,4 +1,4 @@
-import { FeatureCard } from "./code-rich-features";
+import { FeatureCard } from "../utils/features.list";
 
 interface IntegratedTerminalCardProps {
   feature: FeatureCard;

@@ -1,4 +1,8 @@
-import { FeatureCard } from "../components/code-rich-features";
+export interface FeatureCard {
+  title: string;
+  description: string;
+  icon: string;
+}
 
 export const featureCards: FeatureCard[] = [
   {

@@ -1,12 +1,6 @@
 import { extensions } from "../utils/extensions-list";
 import ExtensionItem from "./extension-item";
 
-export interface Extensions {
-  name: string;
-  image: string;
-  description: string;
-}
-
 export default function CodeAnyExtensions() {
   return (
     <section className="py-5 px-5 bg-black opacity-95 md:grid md:grid-cols-[1fr_65%] md:gap-16 md:px-[6rem] md:pb-10">
