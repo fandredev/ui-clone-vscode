@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header className="px-12 py-3 bg-black opacity-95 h-13 fixed top-0 left-0 z-50 w-full">
       <div className="flex gap-3 items-center">
-        <img className="w-7" src="images/download.png" alt="Logotipo VSCode" />
+        <img className="w-7" src="images/vscode.png" alt="Logotipo VSCode" />
         <span className="text-white text-lg mr-4">
           <b>Visual Studio Code</b>
         </span>
