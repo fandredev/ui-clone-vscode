@@ -2,22 +2,22 @@ export default function Footer() {
   return (
     <footer className="py-5 px-5 pb-16 bg-black opacity-95 text-white md:px-[6rem]">
       <div className="my-5 flex justify-between">
-        <ul className="flex gap-5">
-          <li>
+        <ul className="flex gap-5 ">
+          <li className="cursor-pointer">
             <img
               className="w-6"
               src="/images/x-icon.svg"
               alt="Ìcone do Rede Social X"
             />
           </li>
-          <li>
+          <li className="cursor-pointer">
             <img
               className="w-6"
               src="/images/github-icon.svg"
               alt="Rede Social X"
             />
           </li>
-          <li>
+          <li className="cursor-pointer">
             <img
               className="w-6"
               src="/images/youtube-icon.svg"

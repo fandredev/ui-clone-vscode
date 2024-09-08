@@ -16,6 +16,16 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
+  "author": {
+    "name": "Felipe André",
+    "email": "profissionalf.andre@gmail.com",
+    "url": "https://github.com/fandredev/ui-clone-vscode"
+  },
+  "bugs": {
+    "url": "https://github.com/fandredev/ui-clone-vscode/issues",
+    "email": "profissionalf.andre@gmail.com"
+  },
+  "description": "UI Clone - Visual Studio Code",
   "devDependencies": {
     "@eslint/js": "^9.9.0",
     "@testing-library/dom": "^10.4.0",

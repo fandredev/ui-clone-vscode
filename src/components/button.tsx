@@ -7,7 +7,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 export default function Button({
   children,
-  classes = "bg-background_buttons w-36 p-3 rounded-md",
+  classes = "bg-background_buttons w-36 p-3 rounded-md cursor-pointer",
 }: ButtonProps) {
   return <button className={classes}>{children}</button>;
 }
