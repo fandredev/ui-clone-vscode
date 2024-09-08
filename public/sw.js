@@ -1,8 +1,6 @@
+const cacheName = "v1";
+
 self.addEventListener("install", function (event) {
-  console.log("Install the service worker");
-
-  const cacheName = "v1";
-
   event.waitUntil(
     caches.open(cacheName).then((cache) => {
       return cache
@@ -30,3 +28,24 @@ self.addEventListener("install", function (event) {
     })
   );
 });
+
+self.addEventListener("fetch", function (event) {
+  event.respondWith(cacheFirst(event.request));
+});
+
+const cacheFirst = async (request) => {
+  const responseCache = await caches.match(request);
+
+  if (responseCache) return responseCache;
+
+  const networkResponse = await fetch(request);
+  updateCache(request, networkResponse.clone());
+
+  return networkResponse;
+};
+
+const updateCache = async (request, response) => {
+  const cache = await caches.open(cacheName);
+
+  await cache.put(request, response);
+};

@@ -66,7 +66,7 @@ export const viewPWA = VitePWA({
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), viewPWA],
   test: {
     globals: true,
     environment: "jsdom",
