@@ -14,6 +14,8 @@ The project reply the interface from VsCode site (https://code.visualstudio.com/
 
 - [Prettier](https://eslint.org/)
 - [Eslint](https://prettier.io/)
+- [Vite PWA](https://vite-pwa-org.netlify.app/)
+- [asdf](https://asdf-vm.com/)
 
 ## Authors
 
