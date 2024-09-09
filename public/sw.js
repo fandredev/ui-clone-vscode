@@ -1,51 +1,45 @@
-const cacheName = "v1";
+import { CacheableResponsePlugin } from "workbox-cacheable-response";
+import { clientsClaim } from "workbox-core";
+import { cleanupOutdatedCaches, precacheAndRoute } from "workbox-precaching";
+import { registerRoute } from "workbox-routing";
+import { NetworkFirst, StaleWhileRevalidate } from "workbox-strategies";
+import { ExpirationPlugin } from "workbox-expiration";
 
-self.addEventListener("install", function (event) {
-  event.waitUntil(
-    caches.open(cacheName).then((cache) => {
-      return cache
-        .addAll([
-          "/index.html",
-          "/images/banner.png",
-          "/images/c-extension.png",
-          "/images/copilot-extension.png",
-          "/images/cs-dev-kit-extension.png",
-          "/images/github-pull-requests-extension.png",
-          "/images/gitlens-extension.png",
-          "/images/remote-extension.png",
-          "/images/jupyter-extension.png",
-          "/images/microsoft.svg",
-          "/images/python-extension.png",
-          "/images/search.svg",
-          "/images/sun.svg",
-          "/images/x-icon.svg",
-          "/images/vscode.png",
-          "/images/swimlane-anywhere.png",
-          "/images/swimlane-copilot.png",
-          "/images/swimlane-customized.png",
-        ])
-        .then(() => self.skipWaiting());
-    })
-  );
-});
+clientsClaim();
+self.skipWaiting();
 
-self.addEventListener("fetch", function (event) {
-  event.respondWith(cacheFirst(event.request));
-});
+// Limpa caches antigos e precacheia os assets definidos no manifesto.
+cleanupOutdatedCaches();
+precacheAndRoute(self.__WB_MANIFEST);
 
-const cacheFirst = async (request) => {
-  const responseCache = await caches.match(request);
+const thirtyDaysInSeconds = 30 * 24 * 60 * 60;
 
-  if (responseCache) return responseCache;
+// Cache para arquivos CSS (usando NetworkFirst)
+registerRoute(
+  ({ request }) => request.destination === "style",
+  new NetworkFirst({
+    cacheName: "styles-cache",
+    plugins: [
+      new CacheableResponsePlugin({
+        statuses: [0, 200], // Apenas cacheia respostas com esses status
+      }),
+    ],
+  })
+);
 
-  const networkResponse = await fetch(request);
-  updateCache(request, networkResponse.clone());
-
-  return networkResponse;
-};
-
-const updateCache = async (request, response) => {
-  const cache = await caches.open(cacheName);
-
-  await cache.put(request, response);
-};
+// Cache para imagens (usando StaleWhileRevalidate)
+registerRoute(
+  ({ request }) => request.destination === "image",
+  new StaleWhileRevalidate({
+    cacheName: "images-cache",
+    plugins: [
+      new CacheableResponsePlugin({
+        statuses: [0, 200], // Apenas cacheia respostas com esses status
+      }),
+      new ExpirationPlugin({
+        maxEntries: 60, // Limita a quantidade de entradas no cache
+        maxAgeSeconds: thirtyDaysInSeconds, // Define o tempo máximo de cache como 30 dias
+      }),
+    ],
+  })
+);

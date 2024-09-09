@@ -7,6 +7,7 @@ import { VitePWA } from "vite-plugin-pwa";
 
 export const viewPWA = VitePWA({
   registerType: "autoUpdate", // https://vite-pwa-org.netlify.app/guide/
+  strategies: "injectManifest",
   manifest: {
     id: "/",
     name: "VsCode Clone Webpage",
@@ -40,27 +41,6 @@ export const viewPWA = VitePWA({
         sizes: "512x512",
       },
     ],
-  },
-  workbox: {
-    // workbox options to cache images
-    runtimeCaching: [
-      {
-        urlPattern: ({ url }) => {
-          return url.pathname.startsWith("/image");
-        },
-        handler: "CacheFirst",
-        options: {
-          cacheableResponse: {
-            statuses: [0, 200],
-          },
-          cacheName: "runtime-cache",
-        },
-      },
-    ],
-  },
-
-  devOptions: {
-    enabled: true, // enable logs in dev mode
   },
 });
 
