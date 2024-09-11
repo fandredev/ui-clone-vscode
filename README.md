@@ -12,10 +12,11 @@ The project reply the interface from VsCode site (https://code.visualstudio.com/
 
 ### Other tools:
 
-- [Prettier](https://eslint.org/)
-- [Eslint](https://prettier.io/)
+- [Eslint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
 - [Vite PWA](https://vite-pwa-org.netlify.app/)
 - [asdf](https://asdf-vm.com/)
+- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
 ## Authors
 
