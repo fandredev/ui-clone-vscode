@@ -58,10 +58,11 @@ git clone git@github.com:fandredev/ui-clone-vscode.git
  yarn run coverage
 ```
 
-## :mailbox_with_no_mail: Contatos
+## :mailbox_with_no_mail: Contacts
 
 E-mail: profissionalf.andre@gmail.com<br>
 Linkedin: https://www.linkedin.com/in/devfandre/<br>
+Portfólio: https://developer-felipe-andre.vercel.app/
 
 ## Referencies
 
