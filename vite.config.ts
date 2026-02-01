@@ -54,6 +54,15 @@ export default defineConfig({
 
     coverage: {
       include: ["src/**/*"],
+      exclude: [
+        "src/main.tsx",
+        "src/App.tsx",
+        "src/vite-env.d.ts",
+        "src/setupTests.ts",
+        "src/assets/**",
+        "**/*.css",
+        "**/*.d.ts",
+      ],
       reporter: ["text", "html", "json"],
       thresholds: {
         branches: 80,
